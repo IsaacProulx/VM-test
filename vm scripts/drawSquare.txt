@@ -1,0 +1,27 @@
+init:
+  2E00 0000 0003
+  2F00 0000 0000
+  2000 F000 0000
+  2100 9000 0000
+  :start drawing
+
+draw mid:
+  31F0
+  10F0 0000 0001
+  <-
+
+draw top:
+  30F0
+  10F0 0000 0001
+  <-
+
+start drawing:
+  41F0 0000 0000
+    :draw top
+
+  :draw mid
+  40F0 0000 0006
+    :start drawing
+
+:draw top
+
